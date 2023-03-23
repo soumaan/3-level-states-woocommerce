@@ -21,13 +21,25 @@ function techiepress_3ld_states( $states ) {
     $map = array();
 
     $cities = array(
-        'UG19999' => array(
-            'city'     => 'Kampala',
-            'division' => 'Nakawa',
+        'NG1999' => array(
+            'city'     => 'Lagos',
+            'division' => 'Magodo',
         ),
-        'UG29999' => array(
-            'city'     => 'Kampala',
-            'division' => 'Makindye'
+        'NG2999' => array(
+            'city'     => 'Lagos',
+            'division' => 'Victoria Island'
+        ),
+        'NG3999' => array(
+            'city'     => 'Lagos',
+            'division' => 'Iyana Ipaja'
+        ),
+        'NG4999' => array(
+            'city'     => 'Lagos',
+            'division' => 'Berger'
+        ),
+        'NG5999' => array(
+            'city'     => 'Lagos',
+            'division' => 'Chevron'
         ),
     );
 
@@ -35,7 +47,7 @@ function techiepress_3ld_states( $states ) {
         $map[$city] = $cityValue['city'] . ', '. $cityValue['division'];
     }
     
-    $states['UG'] = $map;
+    $states['NG'] = $map;
     
     return $states;
 }
